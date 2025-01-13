@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIT ADT University - School of Computing Infrastructure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://mituniversity.ac.in/assets_web/images/favicon.png"
+      type="image/png"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="infra.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://mituniversity.ac.in/assets_web/images/LOGO2.png"
+            alt="MIT ADT University Logo"
+          />
+        </a>
+
+        <!-- Toggler/collapsible Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mituniversity.ac.in/about-us/"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manag.html">Management Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Time Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="infra.html">Infrastructure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="circular.html">Circular</a>
+            </li>
+            <li class="nav-item">
+              <div class="social-icons d-flex">
+                <a
+                  href="https://www.facebook.com/mitadtuniversity"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/accounts/login/?next=/mitadtuniversity/"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/c/MITADTUniversityPune"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/school/mit-adt-university/"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://twitter.com/mitadtuniv"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Marquee Container -->
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="4">
+        <!--  <i class="fas fa-info-circle icon"></i> -->
+        Having issues? Contact <b>Samadhan Sarode</b>
+        <i class="fab fa-whatsapp icon"></i>9552929211
+        <i class="fab fa-instagram icon"></i>
+        <a
+          href="https://www.instagram.com/s_a_i_s_a_m_?igsh=MWQwdzN5aGpoNm52ZA%3D%3D&utm_source=qr"
+          target="_blank"
+          >@s_a_i_s_a_m_</a
+        >.
+      </marquee>
+    </div>
+    <div class="main-content">
+      <h1>MIT-ADT School of Computing</h1>
+      <h2>Department of Computer Science & Engineering Infrastructure</h2>
+      <div class="card-group">
+        <div class="card" data-target="classrooms">
+          <div class="card-icon"><i class="fas fa-chalkboard"></i></div>
+          <h5>Classrooms</h5>
+        </div>
+        <div class="card" data-target="tutorial-rooms">
+          <div class="card-icon"><i class="fas fa-book-reader"></i></div>
+          <h5>Tutorial Rooms</h5>
+        </div>
+        <div class="card" data-target="admin-cabins">
+          <div class="card-icon"><i class="fas fa-building"></i></div>
+          <h5>Seminar Halls</h5>
+        </div>
+        <div class="card" data-target="faculty-cabins">
+          <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h5>Faculty Cabins</h5>
+        </div>
+        <div class="card" data-target="lab-rooms">
+          <div class="card-icon"><i class="fas fa-laptop"></i></div>
+          <h5>Lab Rooms</h5>
+        </div>
+      </div>
+
+      <button class="back-button" id="" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+      <div class="dropdown-container">
+        <div class="dropdown" id="classrooms">
+          <label for="classroomDropdown">Select Classroom:</label>
+          <select id="classroomDropdown" class="form-control">
+            <option value="">--Select--</option>
+            <option value="classroom1">Classroom</option>
+          </select>
+        </div>
+        <div class="dropdown" id="tutorial-rooms">
+          <label for="tutorialDropdown">Select Tutorial Room:</label>
+          <select id="tutorialDropdown" class="form-control">
+            <option value="">--Select--</option>
+            <option value="tutorial1">Tutorial Room</option>
+          </select>
+        </div>
+        <div class="dropdown" id="admin-cabins">
+          <label for="adminCabinsDropdown">Select Admin Cabin:</label>
+          <select id="adminCabinsDropdown" class="form-control">
+            <option value="">--Select--</option>
+            <option value="admin1">Cabin</option>
+          </select>
+        </div>
+        <div class="dropdown" id="faculty-cabins">
+          <label for="facultyCabinsDropdown">Select Faculty Cabin:</label>
+          <select id="facultyCabinsDropdown" class="form-control">
+            <option value="">--Select--</option>
+            <option value="faculty1">Faculty Cabin</option>
+          </select>
+        </div>
+        <div class="dropdown" id="lab-rooms">
+          <label for="labDropdown">Select Lab Room:</label>
+          <select id="labDropdown" class="form-control">
+            <option value="">--Select--</option>
+            <option value="lab1">Lab Room</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>MIT ADT University - School of Computing</p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+        const dropdowns = document.querySelectorAll(".dropdown");
+        const backButton = document.querySelector(".back-button");
+        const cardGroup = document.querySelector(".card-group");
+
+        // Dropdown links mapping
+        const links = {
+          classrooms: {
+            classroom1:
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiMot1Fn2psE0WDrrDrHzHmjwnmJv9Z8E9wOJQK8V2KZwLCFs4pNm7EszOUwIwUg/pubhtml?gid=1212496716&single=true",
+          },
+          "tutorial-rooms": {
+            tutorial1:
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiMot1Fn2psE0WDrrDrHzHmjwnmJv9Z8E9wOJQK8V2KZwLCFs4pNm7EszOUwIwUg/pubhtml?gid=829399156&single=true",
+          },
+          "admin-cabins": {
+            admin1:
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiMot1Fn2psE0WDrrDrHzHmjwnmJv9Z8E9wOJQK8V2KZwLCFs4pNm7EszOUwIwUg/pubhtml?gid=1332046552&single=true",
+          },
+          "faculty-cabins": {
+            faculty1:
+              "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiMot1Fn2psE0WDrrDrHzHmjwnmJv9Z8E9wOJQK8V2KZwLCFs4pNm7EszOUwIwUg/pubhtml?gid=41393834&single=true",
+          },
+          "lab-rooms": {
+            lab1: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiMot1Fn2psE0WDrrDrHzHmjwnmJv9Z8E9wOJQK8V2KZwLCFs4pNm7EszOUwIwUg/pubhtml?gid=59255923&single=true",
+          },
+        };
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const target = card.getAttribute("data-target");
+            dropdowns.forEach((dropdown) => {
+              dropdown.classList.remove("showing");
+            });
+            document.getElementById(target).classList.add("showing");
+            cardGroup.style.display = "none";
+            backButton.style.display = "inline-flex";
+          });
+        });
+
+        backButton.addEventListener("click", () => {
+          dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove("showing");
+          });
+          cardGroup.style.display = "grid";
+          backButton.style.display = "none";
+        });
+
+        // Open links on dropdown selection
+        dropdowns.forEach((dropdown) => {
+          const selectElement = dropdown.querySelector("select");
+          selectElement.addEventListener("change", (event) => {
+            const target = dropdown.id;
+            const selectedValue = event.target.value;
+            if (links[target] && links[target][selectedValue]) {
+              window.open(links[target][selectedValue], "_blank");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
